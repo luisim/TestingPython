@@ -1,0 +1,31 @@
+Feature: Purchase items from the Sauce Demo website
+
+Scenario: Purchase items from the website and verify successful purchase
+
+Given the user is on the login page of the Sauce Demo website
+When the user enters their login credentials and clicks the login button
+And the user clicks on the first four "ADD TO CART" buttons on the website
+And the user navigates to the cart page and clicks the checkout button
+And the user fills in the checkout information and clicks the continue button
+And the user completes the purchase by clicking the finish button
+Then the user should see a "THANK YOU FOR YOUR ORDER" message on the page
+And the user should log out of the website by clicking the relevant buttons
+
+Scenario: Verify successful logout from the website
+
+Given the user has completed their purchase and logged out of the website
+When the user clicks on the login button
+Then the user should see the login page again
+
+Steps:
+
+Navigate to the login page of the Sauce Demo website.
+Enter the login credentials (username and password) and click the login button.
+Find the first four "ADD TO CART" buttons on the website and click them.
+Navigate to the cart page and click the checkout button.
+Fill in the checkout information (first name, last name, and postal code) and click the continue button.
+Complete the purchase by clicking the finish button.
+Verify that the user sees a "THANK YOU FOR YOUR ORDER" message on the page.
+Log out of the website by clicking the relevant buttons.
+Click on the login button to verify successful logout and return to the login page.
+Note: The above steps assume that the user has a valid account with access to the Sauce Demo website and can perform the required actions. The steps may need to be modified slightly if the website's design or functionality changes in the future.

@@ -1,0 +1,29 @@
+Prerequisites:
+
+Python 3 should be installed on the system.
+Selenium library for Python should be installed. You can install it by running the following command in the terminal or command prompt:
+pip install selenium
+Steps to run the code:
+
+Download or copy the provided code into a new Python file in your preferred IDE.
+Download the latest Chrome driver executable for your OS from the following link:
+https://sites.google.com/a/chromium.org/chromedriver/downloads
+Save the driver executable in a directory/folder on your computer.
+Add the directory path to your system's environment variables to be able to access the driver from anywhere. Alternatively, you can set the driver path in the code itself by modifying the first line where the webdriver is set up. For example:
+makefile
+Copy code
+driver = webdriver.Chrome(executable_path="C:\chromedriver\chromedriver.exe")
+Run the Python file in the IDE or from the command prompt using the following command:
+python filename.py
+Replace filename with the name of your Python file.
+The code will launch a Chrome browser window and navigate to the login page of the Sauce Demo website.
+The code will enter the login credentials and click the login button to access the website.
+The code will find the first four "ADD TO CART" buttons on the website and click them.
+The code will then navigate to the cart page and click the checkout button.
+The code will fill in the checkout information and complete the purchase.
+The code will verify the successful purchase by checking for a specific message on the page.
+The code will then log out of the website by clicking the relevant buttons.
+Finally, the code will check if the login page has been reached again and print a message to the console accordingly.
+Note:
+
+The code assumes that the user account used to log in has access to the Sauce Demo website and can perform the required actions.
